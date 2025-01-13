@@ -2,11 +2,9 @@
 def diff(file_first, file_second):
 	resultat=False
 	with open(file_first) as file1_id:
-		pass
 		with open(file_second) as file2_id:
-			pass
 			resultat=file1_id.read()!=file2_id.read()
-    return resultat
+	return resultat
 
 def same(file_first, file_second):
     """Fonction retournant True si deux fichiers sont identiques."""
