@@ -1,6 +1,6 @@
 """Module manipulant des fichiers texte."""
 
-def diff(file_first, file_second):
+def diff(file_first,file_second):
     """Fonction retournant True si deux fichiers sont identiques."""
     resultat=False
     with open(file_first, encoding='utf-8') as file1_id:
@@ -10,4 +10,4 @@ def diff(file_first, file_second):
 
 def same(file_first, file_second):
     """Fonction retournant True si deux fichiers sont identiques."""
-    return True
+    return not diff(file_first,file_second)
