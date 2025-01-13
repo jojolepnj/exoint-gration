@@ -12,9 +12,9 @@ def diff(file_first, file_second):
         diff(sub_dcmp)
 
 
-	dcmp = dircmp('dir1', 'dir2') 
+	dcmp = dircmp(file_first, file_second) 
 	
-    return dircmp(file_first, file_second)
+    return dcmp
 
 def same(file_first, file_second):
     """Fonction retournant True si deux fichiers sont identiques."""
