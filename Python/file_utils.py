@@ -1,20 +1,11 @@
 """Module manipulant des fichiers texte."""
-from filecmp import *
+
 def diff(file_first, file_second):
-    for name in dcmp.diff_files:
-
-        print("diff_file %s found in %s and %s" % (name, dcmp.left,
-
-              dcmp.right))
-
-    for sub_dcmp in dcmp.subdirs.values():
-
-        diff(sub_dcmp)
-
-
-	dcmp = dircmp(file_first, file_second) 
-	
-    return dcmp
+	resultat=False
+	with open(file_first) as file1_id:
+		with open(file_second) as file2_id:
+			resultat=file1_id.read()!=file2_id.read()!
+    return resultat
 
 def same(file_first, file_second):
     """Fonction retournant True si deux fichiers sont identiques."""
