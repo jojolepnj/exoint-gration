@@ -9,7 +9,7 @@ def diff(file_first, file_second):
 
     for sub_dcmp in dcmp.subdirs.values():
 
-        print_diff_files(sub_dcmp)
+        diff(sub_dcmp)
 
 
 	dcmp = dircmp('dir1', 'dir2') 
