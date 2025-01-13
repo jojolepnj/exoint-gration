@@ -5,7 +5,7 @@
 /****************** Recherche du maximum ***********************/
 float maximum (float n1, float n2 )
 {
-   return fmax( double n1, double n2 );
+   return fmax( n1, n2 );
 }
 
 /****************** Recherche du minimum ***********************/
