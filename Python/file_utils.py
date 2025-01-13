@@ -1,5 +1,5 @@
 """Module manipulant des fichiers texte."""
-
+import file_utils
 def diff(file_first, file_second):
 	resultat=False
 	with open(file_first) as file1_id:
