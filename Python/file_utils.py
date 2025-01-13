@@ -7,5 +7,5 @@ def diff(file_first, file_second):
     return resultat
 
 def same(file_first, file_second):
-	"""Fonction retournant True si deux fichiers sont identiques."""
+    """Fonction retournant True si deux fichiers sont identiques."""
     return True
